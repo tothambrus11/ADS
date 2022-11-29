@@ -1,31 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4bd2c60-7b24-4c8d-9537-70a4cd2cee54" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ADS.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sequences/ArrayQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sequences/ArrayStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sequences/DoublyLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sequences/IDequeue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sequences/IQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sequences/IStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sequences/LinkedStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sequences/SinglyLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sorting/InsertionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sorting/Sorter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/sequences/ArrayQueueTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/sequences/ArrayStackTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/sequences/DoublyLinkedListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/sequences/LinkedStackTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/sequences/SinglyLinkedListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/sorting/SortingTest.java" afterDir="false" />
+    <list default="true" id="b4bd2c60-7b24-4c8d-9537-70a4cd2cee54" name="Changes" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,8 +136,16 @@
       <workItem from="1669392931296" duration="769000" />
       <workItem from="1669403274582" duration="3000" />
       <workItem from="1669560167632" duration="3312000" />
-      <workItem from="1669635224312" duration="917000" />
+      <workItem from="1669635224312" duration="1539000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1669705799886</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669705799886</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +161,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ADS$ArrayQTest.ic" NAME="ArrayQueueTest Coverage Results" MODIFIED="1669149098062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
