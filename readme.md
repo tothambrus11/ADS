@@ -16,6 +16,8 @@
 ## Trees
 - todo
 
-## Sorting
+## Sorting Algorithms
 - Insertion Sort
-- todo...
+- Selection Sort
+- Heap Sort
+- Merge Sort

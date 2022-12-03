@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4bd2c60-7b24-4c8d-9537-70a4cd2cee54" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+    <list default="true" id="b4bd2c60-7b24-4c8d-9537-70a4cd2cee54" name="Changes" comment="readme">
+      <change afterPath="$PROJECT_DIR$/src/sorting/HeapSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sorting/MergeSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sorting/SelectionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/trees/BinTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/trees/BTreeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ADS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ADS.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/Sorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/Sorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/sorting/SortingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/sorting/SortingTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +56,13 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ambru/Desktop/ADS&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ambru/Desktop/ADS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -62,10 +79,29 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in ADS">
-    <configuration name="DoublyLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sequences.DoublyLinkedList" />
+  <component name="RunManager" selected="JUnit.SortingTest">
+    <configuration name="BTreeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="trees.BTreeTest" />
       <module name="ADS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="trees.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="trees.BinTree" />
+      <module name="ADS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="trees.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -78,20 +114,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArrayQueueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BTreeTest.m" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ADS" />
-      <option name="PACKAGE_NAME" value="sequences" />
-      <option name="MAIN_CLASS_NAME" value="sequences.ArrayQueueTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DoublyLinkedListTest.cleoneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ADS" />
-      <option name="PACKAGE_NAME" value="sequences" />
-      <option name="MAIN_CLASS_NAME" value="sequences.DoublyLinkedListTest" />
-      <option name="METHOD_NAME" value="cleoneTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="trees.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="trees" />
+      <option name="MAIN_CLASS_NAME" value="trees.BTreeTest" />
+      <option name="METHOD_NAME" value="m" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -114,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in ADS" />
         <item itemvalue="JUnit.SortingTest" />
-        <item itemvalue="JUnit.DoublyLinkedListTest.cleoneTest" />
-        <item itemvalue="Application.DoublyLinkedList" />
-        <item itemvalue="JUnit.ArrayQueueTest" />
+        <item itemvalue="Application.BinTree" />
+        <item itemvalue="Application.BTreeTest" />
+        <item itemvalue="JUnit.BTreeTest.m" />
+        <item itemvalue="JUnit.All in ADS" />
       </list>
     </recent_temporary>
   </component>
@@ -136,7 +169,10 @@
       <workItem from="1669392931296" duration="769000" />
       <workItem from="1669403274582" duration="3000" />
       <workItem from="1669560167632" duration="3312000" />
-      <workItem from="1669635224312" duration="1539000" />
+      <workItem from="1669635224312" duration="1870000" />
+      <workItem from="1669905202084" duration="2705000" />
+      <workItem from="1669985202996" duration="852000" />
+      <workItem from="1670085175974" duration="8933000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1669705799886</created>
@@ -145,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669705799886</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="readme">
+      <created>1669706231580</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669706231580</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,11 +207,35 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/trees/BinTree.java</url>
+          <line>329</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/trees/BinTree.java</url>
+          <line>333</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ADS$ArrayQTest.ic" NAME="ArrayQueueTest Coverage Results" MODIFIED="1669149098062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/ADS$LinkedListTest_cleoneTest.ic" NAME="LinkedListTest.cleoneTest Coverage Results" MODIFIED="1669221010953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/ADS$BinTree.ic" NAME="BinTree Coverage Results" MODIFIED="1669986015282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>trees.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/ADS$All_in_ADS.ic" NAME="All in ADS Coverage Results" MODIFIED="1669229590116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/ADS$LinkedStackTest.ic" NAME="LinkedStackTest Coverage Results" MODIFIED="1669149042368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/ADS$ArrayStackTest.ic" NAME="ArrayStackTest Coverage Results" MODIFIED="1669149077225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
