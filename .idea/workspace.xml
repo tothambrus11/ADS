@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4bd2c60-7b24-4c8d-9537-70a4cd2cee54" name="Changes" comment="readme">
-      <change afterPath="$PROJECT_DIR$/src/sorting/HeapSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sorting/MergeSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sorting/SelectionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/trees/BinTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/trees/BTreeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b4bd2c60-7b24-4c8d-9537-70a4cd2cee54" name="Changes" comment="sorting algorithms">
+      <change afterPath="$PROJECT_DIR$/src/sorting/QuickSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ADS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ADS.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sorting/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/InsertionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sorting/Sorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/Sorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/HeapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/HeapSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/sorting/SortingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/sorting/SortingTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,26 +99,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in ADS" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ADS" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BTreeTest.m" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sorting.QuickSort" />
       <module name="ADS" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="trees.*" />
+          <option name="PATTERN" value="sorting.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="trees" />
-      <option name="MAIN_CLASS_NAME" value="trees.BTreeTest" />
-      <option name="METHOD_NAME" value="m" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -145,13 +127,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SortingTest.testSortingHeap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ADS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sorting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sorting" />
+      <option name="MAIN_CLASS_NAME" value="sorting.SortingTest" />
+      <option name="METHOD_NAME" value="testSortingHeap" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SortingTest" />
+        <item itemvalue="JUnit.SortingTest.testSortingHeap" />
+        <item itemvalue="Application.QuickSort" />
         <item itemvalue="Application.BinTree" />
         <item itemvalue="Application.BTreeTest" />
-        <item itemvalue="JUnit.BTreeTest.m" />
-        <item itemvalue="JUnit.All in ADS" />
       </list>
     </recent_temporary>
   </component>
@@ -173,6 +171,10 @@
       <workItem from="1669905202084" duration="2705000" />
       <workItem from="1669985202996" duration="852000" />
       <workItem from="1670085175974" duration="8933000" />
+      <workItem from="1670105424379" duration="173000" />
+      <workItem from="1670413771590" duration="1746000" />
+      <workItem from="1670423213678" duration="4223000" />
+      <workItem from="1670534560492" duration="2063000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1669705799886</created>
@@ -188,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669706231580</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="sorting algorithms">
+      <created>1670105488432</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670105488432</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,7 +217,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme" />
+    <MESSAGE value="sorting algorithms" />
+    <option name="LAST_COMMIT_MESSAGE" value="sorting algorithms" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -223,6 +233,20 @@
           <line>333</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/sorting/HeapSort.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/sorting/HeapSort.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StackOverflowError" package="java.lang" />
+          <option name="timeStamp" value="14" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

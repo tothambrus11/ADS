@@ -12,7 +12,8 @@ public class SortingTest {
             new SelectionSort<>(),
             new InsertionSort<>(),
             new HeapSort<>(),
-            new MergeSort<>()
+            new MergeSort<>(),
+            new QuickSort<>()
             );
 
     @Test
@@ -69,6 +70,32 @@ public class SortingTest {
             arr = new String[]{};
             sorter.sort(arr);
             assertArrayEquals(new String[]{}, arr);
+        });
+    }
+    @Test
+    void testSortingHeap() {
+        sorters.forEach(sorter -> {
+            arr = new String[]{"4", "7", "c", "9", "1", "3"};
+            sorter.sort(arr);
+            assertArrayEquals(new String[]{"1", "3", "4", "7", "9", "c"}, arr);
+        });
+    }
+
+
+    @Test
+    void testSortingSameValues() {
+        sorters.forEach(sorter -> {
+            arr = new String[]{"1", "1", "1", "1", "1", "1"};
+            sorter.sort(arr);
+            assertArrayEquals(new String[]{"1", "1", "1", "1", "1", "1"}, arr);
+        });
+    }
+    @Test
+    void testSortingSameValuesOther() {
+        sorters.forEach(sorter -> {
+            arr = new String[]{"1", "1", "1", "1", "1"};
+            sorter.sort(arr);
+            assertArrayEquals(new String[]{"1", "1", "1", "1", "1"}, arr);
         });
     }
 

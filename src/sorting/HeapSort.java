@@ -18,8 +18,8 @@ public class HeapSort<E extends Comparable<E>> implements Sorter<E> {
     }
 
     private void heapify(E[] array) {
-        for (int i = array.length - 1; i > 0; i--) {
-            upHeap(array, i);
+        for (int i = array.length - 1; i >= 0; i--) {
+            downHeap(array, i, array.length);
         }
     }
 
