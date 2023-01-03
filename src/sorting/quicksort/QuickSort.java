@@ -1,8 +1,12 @@
-package sorting;
+package sorting.quicksort;
 
-import java.util.ArrayList;
+import sorting.Sorter;
 
-public class QuickSort<E extends Comparable<E>> implements Sorter<E>{
+/**
+ * A quicksort implementation using a custom partitioning algorithm implemented in-place.
+ * @param <E>
+ */
+public class QuickSort<E extends Comparable<E>> implements Sorter<E> {
     @Override
     public void sort(E[] array) {
         if(array.length == 0) return;
@@ -17,10 +21,10 @@ public class QuickSort<E extends Comparable<E>> implements Sorter<E>{
     }
 
     private void sort(E[] array, int start, int end){
-        if(end <= start){
-            return;
-        }
-        E pivotValue = array[start + (end - start)/2];
+        if(end <= start) return;
+
+        int rangeLength = end - start + 1;
+        E pivotValue = array[(int) (start + Math.random() * rangeLength)];
 
         int p1 = start;
         int p2 = end;

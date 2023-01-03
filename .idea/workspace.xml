@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4bd2c60-7b24-4c8d-9537-70a4cd2cee54" name="Changes" comment="sorting algorithms">
-      <change afterPath="$PROJECT_DIR$/src/sorting/QuickSort.java" afterDir="false" />
+    <list default="true" id="b4bd2c60-7b24-4c8d-9537-70a4cd2cee54" name="Changes" comment="new quicksort implementations, key-based sorting, quick select">
+      <change afterPath="$PROJECT_DIR$/src/sorting/QuickSelect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sorting/SortUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sorting/keybased/BucketSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sorting/keybased/KBSorter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sorting/keybased/KeyedEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sorting/keybased/KeyedInt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sorting/partitioning/HoarePartition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sorting/partitioning/LomutoPartition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sorting/partitioning/Partition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sorting/quicksort/QuickSortWith2Partitioner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sorting/quicksort/QuickSortWithTrickyPartitioner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/sorting/KBSortingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/sorting/PartitionerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/sorting/QuickSelectTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sorting/HeapSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/HeapSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/quicksort/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/SelectionSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/sorting/SortingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/sorting/SortingTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +43,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.jdks/openjdk-18.0.2.1/lib/src.zip!/java.base/java/util/Random.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -49,7 +67,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ambru/Desktop/ADS&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ambru/AppData/Local/Temp/MicrosoftEdgeDownloads/9cbd1614-ef66-49d0-8777-0c731e6c5ca4/DB_Assignment_3&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
@@ -69,38 +87,43 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="sorting" />
       <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.SortingTest">
-    <configuration name="BTreeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="trees.BTreeTest" />
+    <configuration name="PartitionerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ADS" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="trees.*" />
+          <option name="PATTERN" value="sorting.quicksort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="sorting" />
+      <option name="MAIN_CLASS_NAME" value="sorting.PartitionerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="trees.BinTree" />
+    <configuration name="PartitionerTest.qsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ADS" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="trees.*" />
+          <option name="PATTERN" value="sorting.quicksort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="sorting" />
+      <option name="MAIN_CLASS_NAME" value="sorting.PartitionerTest" />
+      <option name="METHOD_NAME" value="qsTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sorting.QuickSort" />
+    <configuration name="PartitionerTest.testIdk" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ADS" />
       <extension name="coverage">
         <pattern>
@@ -108,6 +131,26 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="sorting" />
+      <option name="MAIN_CLASS_NAME" value="sorting.PartitionerTest" />
+      <option name="METHOD_NAME" value="testIdk" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PartitionerTest.testPartition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ADS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sorting.quicksort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sorting" />
+      <option name="MAIN_CLASS_NAME" value="sorting.PartitionerTest" />
+      <option name="METHOD_NAME" value="testPartition" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -116,7 +159,7 @@
       <module name="ADS" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sorting.*" />
+          <option name="PATTERN" value="sorting.quicksort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,29 +170,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortingTest.testSortingHeap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ADS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sorting.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="sorting" />
-      <option name="MAIN_CLASS_NAME" value="sorting.SortingTest" />
-      <option name="METHOD_NAME" value="testSortingHeap" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SortingTest" />
-        <item itemvalue="JUnit.SortingTest.testSortingHeap" />
-        <item itemvalue="Application.QuickSort" />
-        <item itemvalue="Application.BinTree" />
-        <item itemvalue="Application.BTreeTest" />
+        <item itemvalue="JUnit.PartitionerTest" />
+        <item itemvalue="JUnit.PartitionerTest.testIdk" />
+        <item itemvalue="JUnit.PartitionerTest.testPartition" />
+        <item itemvalue="JUnit.PartitionerTest.qsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +201,12 @@
       <workItem from="1670105424379" duration="173000" />
       <workItem from="1670413771590" duration="1746000" />
       <workItem from="1670423213678" duration="4223000" />
-      <workItem from="1670534560492" duration="2063000" />
+      <workItem from="1670534560492" duration="2683000" />
+      <workItem from="1670619348922" duration="70000" />
+      <workItem from="1670867379881" duration="3105000" />
+      <workItem from="1672239410720" duration="5578000" />
+      <workItem from="1672484109723" duration="2460000" />
+      <workItem from="1672497098137" duration="31081000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1669705799886</created>
@@ -197,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670105488432</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix heapify algorithm, add quicksort">
+      <created>1670537594301</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670537594301</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,7 +257,9 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="readme" />
     <MESSAGE value="sorting algorithms" />
-    <option name="LAST_COMMIT_MESSAGE" value="sorting algorithms" />
+    <MESSAGE value="fix heapify algorithm, add quicksort" />
+    <MESSAGE value="new quicksort implementations, key-based sorting, quick select" />
+    <option name="LAST_COMMIT_MESSAGE" value="new quicksort implementations, key-based sorting, quick select" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -234,14 +275,9 @@
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/sorting/HeapSort.java</url>
+          <url>file://$PROJECT_DIR$/src/sorting/QuickSelect.java</url>
           <line>12</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/sorting/HeapSort.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="16" />
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.StackOverflowError" package="java.lang" />

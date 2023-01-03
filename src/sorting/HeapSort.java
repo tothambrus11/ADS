@@ -1,5 +1,7 @@
 package sorting;
 
+import static sorting.SortUtils.swap;
+
 /**
  * Uses an in-place heap data structure at the beginning of the array to get the maximum elements at
  * every iteration. After moving the value to the right, we need to restore the heap property of the
@@ -58,12 +60,4 @@ public class HeapSort<E extends Comparable<E>> implements Sorter<E> {
         }
     }
 
-    /**
-     * Swaps two values in the array at the given indices.
-     */
-    private void swap(E[] array, int i1, int i2) {
-        E temp = array[i1];
-        array[i1] = array[i2];
-        array[i2] = temp;
-    }
 }

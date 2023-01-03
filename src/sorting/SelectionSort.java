@@ -1,5 +1,7 @@
 package sorting;
 
+import static sorting.SortUtils.swap;
+
 /**
  * A sorter algorithm that builds a sorted array by selecting the lowest element from the unsorted
  * part of the list n times, and swapping it with the element after the sorted section of the list.
@@ -18,9 +20,7 @@ public class SelectionSort<E extends Comparable<E>> implements Sorter<E> {
                     minIndex = j;
                 }
             }
-            E temp = array[i];
-            array[i] = minValue;
-            array[minIndex] = temp;
+            swap(array, i, minIndex);
         }
 
     }
