@@ -15,7 +15,8 @@ public class LomutoPartition<V> implements Partition<V> {
         int secondPartitionStart = left;
         for (int i = left; i <= right; i++) {
             if (inFirstPartition.test(array[i])) {
-                swap(array, secondPartitionStart++, i);
+                swap(array, secondPartitionStart, i);
+                secondPartitionStart++;
             }
         }
         return secondPartitionStart;

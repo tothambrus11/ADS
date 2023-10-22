@@ -13,6 +13,13 @@
 - ArrayStack (stack)
 - LinkedStack (stack)
 
+## Maps
+- Map ADT
+- Unsorted Map
+- Hash Map
+  - Separate chaining
+  - Probing
+
 ## Trees
 - todo
 

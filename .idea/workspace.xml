@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4bd2c60-7b24-4c8d-9537-70a4cd2cee54" name="Changes" comment="partitioners, quick select">
-      <change afterPath="$PROJECT_DIR$/src/sorting/quickselect/QuickSelectPartitioning.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sorting/quickselect/SelectNthElement.java" afterDir="false" />
+    <list default="true" id="b4bd2c60-7b24-4c8d-9537-70a4cd2cee54" name="Changes" comment="quick select with partitioning">
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graphs/IsInCycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/maps/AbstractMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/maps/ChainHashMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/maps/Map.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/maps/UnsortedTableMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practise/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practise/Testw.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sets/HashSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sets/Set.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/maps/MapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/sets/SetTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sorting/QuickSelect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/quickselect/QuickSelectLazy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/sorting/QuickSelectTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/sorting/QuickSelectTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ADS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ADS.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/partitioning/LomutoPartition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/partitioning/LomutoPartition.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,13 +72,16 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ambru/AppData/Local/Temp/MicrosoftEdgeDownloads/9cbd1614-ef66-49d0-8777-0c731e6c5ca4/DB_Assignment_3&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ambru/qwewew&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -82,81 +100,80 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.QuickSelectTest">
-    <configuration name="QuickSelectTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.IsInCycle.testSimple">
+    <configuration name="IsInCycle.testSimple" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ADS" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sorting.*" />
+          <option name="PATTERN" value="graphs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="sorting" />
-      <option name="MAIN_CLASS_NAME" value="sorting.QuickSelectTest" />
+      <option name="PACKAGE_NAME" value="graphs" />
+      <option name="MAIN_CLASS_NAME" value="graphs.IsInCycle" />
+      <option name="METHOD_NAME" value="testSimple" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ADS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sets" />
+      <option name="MAIN_CLASS_NAME" value="sets.SetTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuickSelectTest.qsTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SetTest.testAddAndContains" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ADS" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sorting.*" />
+          <option name="PATTERN" value="sets.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="sorting" />
-      <option name="MAIN_CLASS_NAME" value="sorting.QuickSelectTest" />
-      <option name="METHOD_NAME" value="qsTest1" />
+      <option name="PACKAGE_NAME" value="sets" />
+      <option name="MAIN_CLASS_NAME" value="sets.SetTest" />
+      <option name="METHOD_NAME" value="testAddAndContains" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuickSelectTest.qsTest10" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Testw" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ADS" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sorting.*" />
+          <option name="PATTERN" value="practise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="sorting" />
-      <option name="MAIN_CLASS_NAME" value="sorting.QuickSelectTest" />
-      <option name="METHOD_NAME" value="qsTest10" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="practise" />
+      <option name="MAIN_CLASS_NAME" value="practise.Testw" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuickSelectTest.qsTest11" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Testw.testMixed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ADS" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sorting.*" />
+          <option name="PATTERN" value="practise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="sorting" />
-      <option name="MAIN_CLASS_NAME" value="sorting.QuickSelectTest" />
-      <option name="METHOD_NAME" value="qsTest11" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="QuickSelectTest.qsTest6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ADS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sorting.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="sorting" />
-      <option name="MAIN_CLASS_NAME" value="sorting.QuickSelectTest" />
-      <option name="METHOD_NAME" value="qsTest6" />
+      <option name="PACKAGE_NAME" value="practise" />
+      <option name="MAIN_CLASS_NAME" value="practise.Testw" />
+      <option name="METHOD_NAME" value="testMixed" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -164,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.QuickSelectTest" />
-        <item itemvalue="JUnit.QuickSelectTest.qsTest11" />
-        <item itemvalue="JUnit.QuickSelectTest.qsTest1" />
-        <item itemvalue="JUnit.QuickSelectTest.qsTest10" />
-        <item itemvalue="JUnit.QuickSelectTest.qsTest6" />
+        <item itemvalue="JUnit.IsInCycle.testSimple" />
+        <item itemvalue="JUnit.Testw.testMixed" />
+        <item itemvalue="JUnit.Testw" />
+        <item itemvalue="JUnit.SetTest.testAddAndContains" />
+        <item itemvalue="JUnit.SetTest" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +215,20 @@
       <workItem from="1670867379881" duration="3105000" />
       <workItem from="1672239410720" duration="5578000" />
       <workItem from="1672484109723" duration="2460000" />
-      <workItem from="1672497098137" duration="35476000" />
+      <workItem from="1672497098137" duration="48541000" />
+      <workItem from="1672830978030" duration="11810000" />
+      <workItem from="1673016524339" duration="597000" />
+      <workItem from="1673267211888" duration="23000" />
+      <workItem from="1673877040159" duration="898000" />
+      <workItem from="1673878584563" duration="937000" />
+      <workItem from="1673898093751" duration="32000" />
+      <workItem from="1673900628893" duration="1685000" />
+      <workItem from="1674336205164" duration="5290000" />
+      <workItem from="1674491018799" duration="1036000" />
+      <workItem from="1674577178938" duration="67000" />
+      <workItem from="1674731084076" duration="5165000" />
+      <workItem from="1675028731120" duration="2020000" />
+      <workItem from="1675271843470" duration="59000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1669705799886</created>
@@ -235,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672739816150</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="quick select with partitioning">
+      <created>1672744346950</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672744346950</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +296,8 @@
     <MESSAGE value="fix heapify algorithm, add quicksort" />
     <MESSAGE value="new quicksort implementations, key-based sorting, quick select" />
     <MESSAGE value="partitioners, quick select" />
-    <option name="LAST_COMMIT_MESSAGE" value="partitioners, quick select" />
+    <MESSAGE value="quick select with partitioning" />
+    <option name="LAST_COMMIT_MESSAGE" value="quick select with partitioning" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -275,14 +313,9 @@
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/sorting/quickselect/QuickSelectLazy.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/sorting/quickselect/QuickSelectPartitioning.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="32" />
+          <url>file://$PROJECT_DIR$/src/practise/Testw.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.StackOverflowError" package="java.lang" />
